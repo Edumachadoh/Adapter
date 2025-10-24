@@ -16,3 +16,6 @@ Cada classe adaptadora possui um atributo privado do tipo da fábrica correspond
 As classes adaptadoras também implementam a interface IRedeSocial, garantindo que todas sigam o mesmo contrato de funcionalidades.
 
 Na classe principal (main), o usuário instancia uma rede social associando-a a um adaptador, que recebe como parâmetro a fábrica específica da rede social desejada. A partir desse objeto, torna-se possível realizar e agendar publicações de maneira unificada, sem precisar conhecer os detalhes de implementação de cada rede social.
+
+## Diagrama
+O diagrama se encontra no arquivo Adapter.png que está na pasta do repositório
