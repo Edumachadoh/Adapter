@@ -1,23 +1,24 @@
 package Adaptadores;
 
-public class AdaptadorTiktok {
+import Fabrica.FabricaTiktok;
+import Interface.IRedeSocial;
+
+public class AdaptadorTiktok implements IRedeSocial{
     // propriedade privada com o objeto incompativel
-    private GatewayPagamentoLegado gatewayLegado;
+    private FabricaTiktok legadoTiktok;
     
     // construtor com dependencia da classe incompativel
-    public GatewayPagamentoAdapter(GatewayPagamentoLegado gateway) {
-        this.gatewayLegado = gateway;
+    public AdaptadorTiktok(FabricaTiktok tiktok) {
+        this.legadoTiktok = tiktok;
     }
 
     @Override
-    public boolean validarCartao(String numeroCartao) {
-        // adicionar metodo incompativel
-        return this.gatewayLegado.validarCartaoCredito(numeroCartao);
+    public void agendarPublicacao() {
+        this.legadoTiktok.criar().agendarPublicacao();
     }
 
     @Override
-    public void processadorPagamento(double valor) {
-        // buscar a moeda em uma propriedade específica
-        this.gatewayLegado.EfetuarPagamento(valor, "BRL");
+    public void fazerPublicacao() {
+        this.legadoTiktok.criar().fazerPublicacao();
     }
 }
