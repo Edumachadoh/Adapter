@@ -1,6 +1,4 @@
-package Fabrica;
-
-import Interface.IRedeSocial;
+package Interface;
 
 public interface IFabricaRedeSocial {
     IRedeSocial criar();

@@ -1,6 +1,7 @@
 package Fabrica;
 
 import Classe.Twitter;
+import Interface.IFabricaRedeSocial;
 import Interface.IRedeSocial;
 
 public class FabricaTwitter implements IFabricaRedeSocial{

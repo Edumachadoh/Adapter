@@ -1,6 +1,7 @@
 package Fabrica;
 
 import Classe.Linkedln;
+import Interface.IFabricaRedeSocial;
 import Interface.IRedeSocial;
 
 public class FabricaLinkedln implements IFabricaRedeSocial{

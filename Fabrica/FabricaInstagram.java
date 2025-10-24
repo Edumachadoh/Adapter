@@ -1,6 +1,7 @@
 package Fabrica;
 
 import Classe.Instagram;
+import Interface.IFabricaRedeSocial;
 import Interface.IRedeSocial;
 
 public class FabricaInstagram implements IFabricaRedeSocial{
